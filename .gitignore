@@ -1,0 +1,15 @@
+# Ignore all Terraform files in current directory and subfolders
+misc/
+
+*.tf
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+crash.log
+terraform.tfvars
+terraform.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
