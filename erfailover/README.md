@@ -571,3 +571,22 @@ QUESTION: Why does 10.3.0.0/16 point to the Megaport ExpressRoute Gateway "135.1
 ANSWER: The routing behavior in Azure Virtual WAN (vWAN) is influenced by the Hub Routing Preference setting, which determines how routes are advertised and selected between virtual hubs and connected networks. When you set the Hub Routing Preference to "ASPath", it prioritizes routes based on the AS path length, which can lead to different routing decisions compared to when it's set to "ExpressRoute".
 
 TODO: Verify ER circuit routing
+
+## Misc
+
+### Github
+
+~~~powershell
+$repo = "cptdazexpressroute"
+gh repo create $repo --public
+git init
+git remote add origin https://github.com/cpinotossi/$repo.git
+git remote -v
+git status
+git add .gitignore
+git add .
+git commit -m"add dmauser vwan demo"
+git status
+git push origin main
+~~~
+~~~
